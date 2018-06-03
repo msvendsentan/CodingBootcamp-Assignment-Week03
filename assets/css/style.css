@@ -1,0 +1,15 @@
+.btn {
+    padding: 6% 0;
+}
+
+.card-header {
+    font-weight: bold;
+}
+
+#cheater {
+    color: white;
+}
+
+#cheater:hover {
+    color: red;
+}

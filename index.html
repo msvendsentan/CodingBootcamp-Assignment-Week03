@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Word Guess Game!</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+    </head>
+    <body>
+        <div class="container">
+
+            <div class="jumbotron bg-primary text-center">
+                <div><h1 class="text-light">WORD GUESS GAME - FRUIT EDITION</h1></div>
+                <div><h4 class="text-dark">An exercise for the U of T Coding Bootcamp</h4></div>
+                <div><h5 class="text-dark">Michael Svendsen</h5></div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="card text-center">
+                <p class="card-header">Instructions</p>
+                <p class="card-body mb-0">Use your keyboard to guess the letters of a randomly chosen common fruit! You have five more guesses than the number of letters in the fruit.</p>
+            </div>
+              
+        </div>
+
+
+
+        <div class="container mt-3">
+            <div class="row">
+                <div class="col-4 text-center">
+                    <div class="row">
+                        <div class="col">
+                            <div class="card card-header">Score</div>
+                            <div class="card card-body" id="score"></div>
+                        </div>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col">
+                            <div class="card card-header">Guesses Left</div>
+                            <div class="card card-body" id="guesses-remaining"></div>
+                        </div>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col">
+                            <button type="button" class="btn btn-success container-fluid" onclick="initialize()">New Game!</button>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-8 text-center">
+                    <div class="row">
+                        <div class="col">
+                            <div class="card card-header">Guess the Word</div>
+                            <div class="card card-body" id="word"></div>
+                        </div>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col">
+                            <div class="card card-header">Guessed Letters</div>
+                            <div class="card card-body" id="guessed-letters"></div>
+                        </div>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col">
+                            <div class="card card-body bg-secondary" id="initializer"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="container mt-3 text-center" id="cheater"></div>
+
+        <!--make div ids into span ids where possible (rename ids and vars for semantics)-->
+
+
+        <script src="./assets/javascript/game.js"></script>
+    </body>
+</html>
