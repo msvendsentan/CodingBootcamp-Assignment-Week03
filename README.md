@@ -2,5 +2,8 @@
 
 The assignment was to create a simple themed "Hangman game" implementation.
 
-**Features:**
+**Specifications**
+* TBD
+
+**Features**
 * TBD
